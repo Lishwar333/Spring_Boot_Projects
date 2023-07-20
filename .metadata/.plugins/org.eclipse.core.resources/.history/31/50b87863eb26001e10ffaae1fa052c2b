@@ -1,0 +1,5 @@
+package com.store.productcatalogue.Cart.Model;
+
+public class cart {
+
+}
