@@ -1,2 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.hexagonal.application.port.in.CreateMessage"/>
+    <fullyQualifiedTypeName name="com.hexagonal.application.port.in.FindMessage"/>
+    <fullyQualifiedTypeName name="com.hexagonal.adapter.drivern.MessageEntity"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Entity"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.GeneratedValue"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.GenerationType"/>
+    <fullyQualifiedTypeName name="com.hexagonal.application.port.out.ReadMessage"/>
+    <fullyQualifiedTypeName name="com.hexagonal.application.port.out.WriteMessage"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="com.hexagonal.application.model.Message"/>
+    <fullyQualifiedTypeName name="com.hexagonal.service.MessageService"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.hexagonal.adapter.drivern.MessageMapper"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+    <fullyQualifiedTypeName name="com.hexagonal.adapter.drivern.MessageDto"/>
+</qualifiedTypeNameHistroy>
