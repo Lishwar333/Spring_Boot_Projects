@@ -3,6 +3,8 @@ package com.store.productcatalogue.Cart.Integration;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.ArrayList;
+
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
@@ -16,9 +18,13 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.TestPropertySource;
 
 import com.jayway.restassured.RestAssured;
+import com.jayway.restassured.http.ContentType;
+
 import static com.jayway.restassured.RestAssured.get;
+import static com.jayway.restassured.RestAssured.given;
 import com.store.productcatalogue.Cart.CartApplication;
 import com.store.productcatalogue.Cart.Model.Cart;
+import com.store.productcatalogue.Cart.Model.LineItem;
 
 
 
@@ -28,6 +34,8 @@ import com.store.productcatalogue.Cart.Model.Cart;
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 class IntegrationTest {
 	
+	private static final String List = null;
+
 	@LocalServerPort
 	private int randomServerPort;
 	
@@ -74,6 +82,19 @@ class IntegrationTest {
 		
 	Cart cart = get("/cart/1001").as(Cart.class);
 	assertEquals(1001, cart.getCartId());
+		
+	}
+	
+	@Test
+	@Order(5)
+	public void searchCartByIdTest5() {
+		
+		java.util.List<LineItem> items = new ArrayList<LineItem>();
+		LineItem item = new LineItem(101, 001, "Biscuit", 5, 25.00);
+		items.add(item);
+		Cart cart = new Cart(1001, items);
+		given().accept(ContentType.JSON).contentType(ContentType.JSON).body(cart).post("/cart/addcart").then()
+		.statusCode(200);
 		
 	}
 
