@@ -18,4 +18,21 @@
     <fullyQualifiedTypeName name="com.hexagonal.adapter.drivern.MessageMapper"/>
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
     <fullyQualifiedTypeName name="com.hexagonal.adapter.drivern.MessageDto"/>
+    <fullyQualifiedTypeName name="com.store.productcatalogue.Cart.CartApplication"/>
+    <fullyQualifiedTypeName name="org.springframework.test.context.ContextConfiguration"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.TestInstance"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.TestInstance.Lifecycle"/>
+    <fullyQualifiedTypeName name="org.springframework.test.context.TestPropertySource"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.test.context.SpringBootTest.WebEnvironment"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.test.context.SpringBootTest"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.test.web.server.LocalServerPort"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.BeforeAll"/>
+    <fullyQualifiedTypeName name="com.jayway.restassured.RestAssured"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Order"/>
+    <fullyQualifiedTypeName name="com.store.productcatalogue.Cart.Model.Cart"/>
+    <fullyQualifiedTypeName name="lombok.Value"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
+    <fullyQualifiedTypeName name="com.store.productcatalogue.Cart.Model.LineItem"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.jayway.restassured.http.ContentType"/>
 </qualifiedTypeNameHistroy>
