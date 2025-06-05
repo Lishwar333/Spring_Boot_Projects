@@ -1,7 +1,4 @@
 package com.store.productcatalogue.Cart.Controller;
-
- 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -45,12 +42,12 @@ public class CartController {
 
         @PostMapping("/addcart")
         public Cart addCartById(@RequestBody Cart cart) throws InvalidInput {
+        	
+        	
             return cartService.addCartById(cart);
 
 
     }
-
- 
 
         @PutMapping("/update")
         public Cart updateCartById(@RequestBody Cart cart) throws InvalidInput, DataNotFound {
@@ -71,4 +68,4 @@ public class CartController {
             }
             return foundcart;
 }        
-} 
+}

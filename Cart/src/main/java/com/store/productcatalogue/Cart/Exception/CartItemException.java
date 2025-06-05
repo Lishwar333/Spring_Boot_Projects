@@ -1,7 +1,4 @@
 package com.store.productcatalogue.Cart.Exception;
-
- 
-
 import java.time.LocalDate;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -15,15 +12,13 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
- 
-
 
 @ControllerAdvice
-public class CartItemException extends ResponseEntityExceptionHandler{
+public class CartItemException{
 
 @ExceptionHandler(DataNotFound.class)
 
-    public ResponseEntity<Object> handleDataNotFound(DataNotFound ex,WebRequest request)
+    public ResponseEntity<Object> handleDataNotFound(DataNotFound ex)
     {
         Map<String, Object> body=new LinkedHashMap<>();
         body.put("message", ex.getMessage());
@@ -35,9 +30,7 @@ public class CartItemException extends ResponseEntityExceptionHandler{
 
 @ExceptionHandler(InvalidInput.class)
 
- 
-
-public ResponseEntity<Object> handleInvalidInput(InvalidInput ex,WebRequest request)
+public ResponseEntity<Object> handleInvalidInput(InvalidInput ex)
 {
     Map<String, Object> body=new LinkedHashMap<String, Object>();
     body.put("message", ex.getMessage());
@@ -45,7 +38,5 @@ public ResponseEntity<Object> handleInvalidInput(InvalidInput ex,WebRequest requ
     return new ResponseEntity<Object>(body,HttpStatus.BAD_REQUEST);
 }
 
-
- 
 
 }

@@ -27,8 +27,7 @@ public class DataNotFound extends Exception {
  
 
     public DataNotFound(String message) {
-        super();
-        this.message = message;
+        super(message); // Pass message to the Exception class
     }
 
  
