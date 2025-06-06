@@ -10,32 +10,11 @@ import lombok.Setter;
 
 
 public class DataNotFound extends Exception {
-    String message;
-
- 
-
-    public String getMessage() {
-        return message;
-    }
-
- 
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
- 
 
     public DataNotFound(String message) {
         super(message); // Pass message to the Exception class
     }
 
- 
-
-    public DataNotFound() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
 
 
 }
