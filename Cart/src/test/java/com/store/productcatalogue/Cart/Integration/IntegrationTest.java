@@ -87,7 +87,7 @@ class IntegrationTest {
 	
 	@Test
 	@Order(5)
-	public void searchCartByIdTest5() {
+	public void addCartWithOneLineItem_shouldReturn200(){
 		
 		java.util.List<LineItem> items = new ArrayList<LineItem>();
 		LineItem item = new LineItem(101, 001, "Biscuit", 5, 25.00);
