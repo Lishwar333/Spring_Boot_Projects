@@ -97,5 +97,26 @@ class IntegrationTest {
 		.statusCode(200);
 		
 	}
+	
+	@Test
+	@Order(6)
+	public void searchLineItemtest() {
+		
+		LineItem item = new LineItem(101, 1, "Biscuit", 5, 25.00);
+		
+		get("/lineitem/-1").then().assertThat().body(message, equalTo(response));
+
+	}
+	
+	@Test
+	@Order(7)
+	public void addLineItem_shouldReturn200(){ //Why failing? cuz only post items to existing cart id, not a new one.
+		
+		
+		LineItem item = new LineItem(105, 001, "Biscuitr", 5, 25.00);
+		given().accept(ContentType.JSON).contentType(ContentType.JSON).body(item).when().post("/lineitem/add/1001").then()
+		.statusCode(200);
+		
+	}
 
 }
